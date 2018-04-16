@@ -1,0 +1,49 @@
+<view>
+  <view class="info">
+    <!-- 姓名部分 -->
+    <view class="item">
+      <text>姓名</text>
+      <view class="right">
+        <input type="text" name="name" placeholder="{{name}}" focus="{{focus}}" />
+      </view>
+    </view>
+
+    <!-- 电话部分 -->
+    <view class="item">
+      <text>电话</text>
+      <view class="right">
+        <input name="phone" type="number" placeholder="{{tel}}" focus="{{focus}}" />
+      </view>
+    </view>
+
+
+
+    <!-- 收货地址部分 -->
+    <view class="item">
+      <text>微信</text>
+      <view class="right">
+       <input name="addre" type="text" placeholder="{{tel}}" focus="{{focus}}" />
+
+      </view>
+    </view>
+  </view>
+  <!-- -------日期 -------- -->
+  <view>
+    
+    <view class="section">
+      <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindDateChange">
+        <view class="picker">
+          日期: {{dates}}
+        </view>
+      </picker>
+    </view>
+  </view>
+<view class="section">
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view class="picker">
+          时间 : {{times}}
+        </view>
+      </picker>
+    </view>
+<button>提交预约</button>
+</view>

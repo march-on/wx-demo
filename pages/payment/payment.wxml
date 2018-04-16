@@ -1,0 +1,42 @@
+<view>
+  <!-- 付款 -->
+  <view class='page'>
+    <text>收货地址</text>
+    <view wx:if="{{defaultAddress.length!=0}}">
+      <view class='addresss' wx:key="{{index}}" wx:for="{{defaultAddress}}">
+        <view>
+          <text>{{item.name}}</text>
+          <text class='right'>{{item.phone}}</text>
+        </view>
+        <text>{{item.addre}}</text>
+        <text>{{item.door}}</text>
+      </view>
+    </view>
+    <view wx:else>
+      <text>你的收货地址是空噢，赶快去设置默认地址吧！</text>
+    </view>
+  </view>
+
+
+
+  <!-- 商品 -->
+  <view class='goods' wx:for="{{carts}}" wx:key="{{index}}">
+    <navigator  url="../wares/wares?id={{item.imgPath}}">
+      <image class='imgs' src='{{centerIp}}{{item.image}}'></image>
+    </navigator>
+    <text class='text1'>{{item.title}}</text>
+    <text class='text2'>七天无理由退款</text>
+    <text>x{{item.num}}</text>
+    <text class='text3'>￥{{item.sum}}</text>
+  </view>
+
+  <view class='payment'>
+    <view class='bottom1'>
+      <text class='text4'>合计:</text>
+      <text class='text5'>￥{{totalPrice}}</text>
+    </view>
+    <view class='bottom2'>
+      <button class='paymentBtn' bindtap='paymentBtn'>提交订单</button>
+    </view>
+  </view>
+</view>

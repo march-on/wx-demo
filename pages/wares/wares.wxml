@@ -1,0 +1,107 @@
+<!-- 商品详情页面 -->
+<view class='container'>
+  <!-- 顶部大图 -->
+  <view class='topDiv'>
+    <view class='top_imgDiv'>
+      <image src='{{centerIp}}{{msg.picture}}'></image>
+    </view>
+  </view>
+
+  <!-- 标题、价格、门店 -->
+  <view class='titleDiv'>
+    <text class='h1'>{{msg.shopName}}</text> 
+    <text class='price'>￥{{msg.price}}</text>
+    <text class='sales'>销量: {{msg.num}}</text>
+    <text class='stores'>门店: 二狗宠物店</text>
+  </view>
+
+  <!-- 简介 -->
+
+  <view class='textBaseTitle'>
+    <text>商品介绍</text>
+  </view>
+
+  <!-- 简介内容 -->
+  <view class='IntroContainer'>
+    <view>
+      <text> <text class='prve'>商品品牌:</text>{{msg.shopName}}</text>
+      <text><text class='prve'>品类:</text>{{msg.allstandard}}</text>
+    </view>
+    <view>
+      <text><text class='prve'>材质:</text>{{msg.textures}}</text>
+      <text><text class='prve'>制作方法: </text>纯手工制作</text>
+    </view>
+    <view>
+      <text><text class='prve'>包装规格:</text>{{msg.size}}</text>
+      <text><text class='prve'>口味:</text>{{msg.taste}}</text>
+    </view>
+    <view>
+      <text><text class='prve'>特殊功效: </text>{{msg.message}}</text>
+      <text><text class='prve'>产地: </text>{{msg.provider}}</text>
+    </view>
+    <view>
+      <text><text class='prve'>出厂日期: </text>{{msg.productiondate}}</text>
+      <text><text class='prve'>生产日期: </text>{{msg.productiondate}}</text>
+    </view>
+    <view>
+      <text><text class='prve'>保质期: </text>{{msg.expirationdate}}</text>
+      <text><text class='prve'>供应商: </text>{{msg.provider}}</text>
+    </view>
+    <view>
+      <text><text class='prve'>特色: </text>{{msg.characteristic}}</text>
+      <text><text class='prve'>价格:￥ </text>{{msg.price}}</text>
+    </view>
+    <view>
+      <text><text class='prve'>图片: </text><image src='http://127.0.0.1:3000{{msg.picture}}'></image></text>
+    </view>
+
+  </view>
+
+  <!-- 评价 -->
+
+  <view class='textBaseTitle'>
+    <text>商品评价</text>
+  </view>
+
+  <!-- 商品评价内容 -->
+  <view class='EvalContainer'>
+    <view class='anyDiv'>
+      <view class='anyEvalText'>
+        <text>好评(435)</text>
+        <text>中评(2)</text>
+        <text>差评(0)</text>
+      </view>
+      <view class='EvalDiv'>
+        <view class='EvalImgDiv'>
+          <image></image>
+        </view>
+        <view class='EvaltextDiv'>
+          <text>权**2</text>
+          <text>评价内容：{{item.appraise}}</text>
+          <text>2018-03-19</text>
+
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <!-- 页脚 -->
+  <view class='footer'>
+    <view class='footer_mid'>
+      <view class='car'>     
+        <navigator url="../shoppingCart/shoppingCart">
+          <image></image>
+         <text>购物车</text>
+        </navigator>
+       
+      </view>
+
+      <view class='car'>
+        <image></image>
+        <text class='comi'>进店</text>
+      </view>
+      <button class='addBtn' bindtap='addShopping'>加入购物车</button>
+      <button class='buy'>立即购买</button>
+    </view>
+  </view>
+</view>

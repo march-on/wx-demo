@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view>
+  <!--轮播-->
+  <view class='swiper'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:key='index' wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 服务 -->
+  <view class="service">
+      <view class="serviceInline">
+      <image src='../imgs/1.gif' bindtap='service'></image>
+      <navigator url="../reservation/reservation">预约</navigator>
+      </view>
+      <view class="serviceInline">
+      <image src='../imgs/2.gif' bindtap='serviceInline'></image>
+      <navigator url="../goods/goods">商品</navigator>
+      </view>
+      <view class="serviceInlines">
+      <image src='../imgs/4.gif' bindtap='serviceInlines'></image>
+      <text>门店</text>
+      </view>
+  </view>
+
+
+<view class="section tc">
+  <video id="myVideo" class='myVideo' controls src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}"></video>
+</view>
+
+
+</view>

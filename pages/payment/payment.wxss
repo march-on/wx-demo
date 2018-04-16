@@ -1,0 +1,74 @@
+.page {  
+  display: block;  
+  min-height: 100%;  
+  font-family: "微软雅黑";
+  font-size: 35rpx;
+  color:#353535;
+  position: relative;
+}
+
+.imgs {
+  margin: 0 35rpx;
+  width: 185rpx;
+  height: 185rpx;
+  float: left;
+}
+
+.text1 {
+  display: block;
+  font-size: 36rpx;
+  margin-bottom: 20rpx;
+}
+
+.text2 {
+  font-size: 30rpx;
+  color: red;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.text3 {
+  display: inline-block;
+  margin-left: 100rpx;
+}
+
+.text4 {
+  margin-right: 50rpx;
+  font-size: 55rpx;
+  float: left;
+}
+
+.goods {
+  margin: 40rpx 0;
+}
+
+.payment {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  outline: 1px solid black;
+}
+
+.paymentBtn {
+  line-height: 66rpx;
+  margin-left: 50rpx;
+  display: inline-block;
+}
+
+.bottom1 {
+  display: inline-block;
+}
+
+.bottom2 {
+  display: inline-block;
+}
+
+.text5 {
+  float: left;
+  color: red;
+  font-size: 55rpx;
+}
+.right{
+  float: right;
+}

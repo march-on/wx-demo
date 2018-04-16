@@ -1,0 +1,101 @@
+<view>
+  <view class='describe'>
+    <text bindtap='btn' id='entire'>全部</text>
+    <text bindtap='btn' id='pendingPayment'>待付款</text>
+    <text bindtap='btn' id='pendingDelivery'>待发货</text>
+    <text bindtap='btn' id='receiveGoods'>待收货</text>
+    <text bindtap='btn' id='BeEvaluated'>待评价</text>
+    <text bindtap='btn' id='refundSale'>退款/售后</text>
+  </view>
+  <!--全部  -->
+  <view wx:if="{{entire}}">
+    <text>全部订单</text>
+    <view wx:for='{{orderArr}}' wx:key='{{index}}'>
+      <view class='shopCar' wx:for='{{item.shopCar}}' wx:key='{{index}}'>
+        <navigator  url="../wares/wares?id={{item.imgPath}}">
+          <image class='imgs' src='{{centerIp}}{{item.image}}'></image>
+        </navigator>
+        <text class='text1'>{{item.title}}</text>
+        <text class='text2'>七天无理由退款</text>
+        <text>x{{item.num}}</text>
+        <text class='text3'>￥{{item.sum}}</text>
+      </view>
+    </view>
+  </view>
+  <!--待付款  -->
+  <view wx:if="{{pendingPayment}}">
+    <text>待付款</text>
+    <view wx:for='{{anOrder}}' wx:key='{{index}}'>
+      <view class='shopCar' wx:for='{{item.shopCar}}' wx:key='{{index}}'>
+        <navigator>
+          <image class='imgs' src='{{centerIp}}{{item.image}}'></image>
+        </navigator>
+        <text class='text1'>{{item.title}}</text>
+        <text class='text2'>七天无理由退款</text>
+        <text>x{{item.num}}</text>
+        <text class='text3'>￥{{item.sum}}</text>
+      </view>
+    </view>
+  </view>
+  <!--待发货  -->
+  <view wx:if="{{pendingDelivery}}">
+    <text>待发货</text>
+    <view wx:for='{{anOrder}}' wx:key='{{index}}'>
+      <view class='shopCar' wx:for='{{item.shopCar}}' wx:key='{{index}}'>
+        <navigator>
+          <image class='imgs' src='{{centerIp}}{{item.image}}'></image>
+        </navigator>
+        <text class='text1'>{{item.title}}</text>
+        <text class='text2'>七天无理由退款</text>
+        <text>x{{item.num}}</text>
+        <text class='text3'>￥{{item.sum}}</text>
+      </view>
+    </view>
+  </view>
+  <!--待收货  -->
+  <view wx:if="{{receiveGoods}}">
+    <text>待收货</text>
+    <view wx:for='{{anOrder}}' wx:key='{{index}}'>
+      <view class='shopCar' wx:for='{{item.shopCar}}' wx:key='{{index}}'>
+        <navigator>
+          <image class='imgs' src='{{centerIp}}{{item.image}}'></image>
+        </navigator>
+        <text class='text1'>{{item.title}}</text>
+        <text class='text2'>七天无理由退款</text>
+        <text>x{{item.num}}</text>
+        <text class='text3'>￥{{item.sum}}</text>
+      </view>
+    </view>
+  </view>
+  <!--待评价  -->
+  <view wx:if="{{BeEvaluated}}">
+    <text>待评价</text>
+    <view wx:for='{{anOrder}}' wx:key='{{index}}'>
+      <view class='shopCar' wx:for='{{item.shopCar}}' wx:key='{{index}}'>
+        <navigator>
+          <image class='imgs' src='{{centerIp}}{{item.image}}'></image>
+        </navigator>
+        <text class='text1'>{{item.title}}</text>
+        <text class='text2'>七天无理由退款</text>
+        <text>x{{item.num}}</text>
+        <text class='text3'>￥{{item.sum}}</text>
+      </view>
+    </view>
+  </view>
+  <!--退款/售后  -->
+  <view wx:if="{{refundSale}}">
+    <text>退款/售后</text>
+    <view wx:for='{{anOrder}}' wx:key='{{index}}'>
+      <view class='shopCar' wx:for='{{item.shopCar}}' wx:key='{{index}}'>
+        <navigator>
+          <image class='imgs' src='{{centerIp}}{{item.image}}'></image>
+        </navigator>
+        <text class='text1'>{{item.title}}</text>
+        <text class='text2'>七天无理由退款</text>
+        <text>x{{item.num}}</text>
+        <text class='text3'>￥{{item.sum}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>

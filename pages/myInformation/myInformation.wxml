@@ -1,0 +1,32 @@
+<view>
+</view>
+<view class="">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<!--我的地址-->
+
+<view class='address'>
+<view>收货地址</view>
+<navigator url='../address/address'>设置></navigator>
+</view>
+
+<!--订单  -->
+<view class='order'>
+  <text>我的订单</text>
+  <navigator url="../order/order?name=entire">查看更多订单></navigator>
+</view>
+<view class='describe'>
+   <navigator url="../order/order?name=pendingPayment">待付款</navigator>
+   <navigator url="../order/order?name=pendingDelivery">待发货</navigator>
+ <navigator url="../order/order?name=receiveGoods">待收货</navigator>
+ <navigator url="../order/order?name=BeEvaluated">待评价</navigator>  
+ <navigator url="../order/order?name=refundSale">退货售后</navigator>   
+</view>
+

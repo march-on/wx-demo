@@ -1,0 +1,22 @@
+<view>
+<view class='describe'>
+<text bindtap='new'>最新榜单</text>
+<text bindtap='hot'>最热榜单</text>
+</view>
+
+<view wx:if='{{new}}'>
+    <input confirm-type='search'></input>
+    <view class='goods' wx:key='{{item._id}}' wx:for='{{msg}}'>
+      <image class='imgs' id='{{item._id}}' bindtap='click' src='{{centerIp}}{{item.picture[0]}}'></image>
+    </view>
+</view>
+
+<view wx:if='{{hot}}'>
+    <input confirm-type='search'></input>
+    <!-- <view class='goods' wx:key='{{item._id}}' wx:for='{{newArr}}'> -->
+      <image class='imgs' class='goods'  bindtap='click' id='{{newArr._id}}'  src='{{centerIp}}{{newArr.picture[0]}}'></image>
+    <!-- </view> -->
+</view>
+
+
+</view>

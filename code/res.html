@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alert(navigator.userAgent);
+        let reg =/chrome/i;
+        let reg2 =/Firefox/i;
+        let reg2 =/Trudent/i;
+        let str=navigator.userAgent;
+        if(reg.test(str)){
+            alert("您使用的是windows NT 6.1操作系统,"+"浏览器为Chrome,"+"内核为webkit");
+        }
+        else if(reg2.test(str)){
+            alert("您使用的是windows NT 6.1操作系统，"+"浏览器为Firefox，"+"内核为Gecko");
+        }
+        else if(reg3.test(str)){
+            alert("您使用的是windows NT 6.1操作系统，"+"浏览器为IE，"+"内核为Trudent");
+        }
+        
+    </script>
+</body>
+</html>

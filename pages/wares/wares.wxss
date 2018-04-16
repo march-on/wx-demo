@@ -1,0 +1,299 @@
+
+.container{
+  padding: 0  ;
+  background-color: #f4f4f4;
+}
+/* 顶部大图 */
+
+.topDiv {
+  width: 100%;
+  height: 464rpx; 
+}
+
+.top_imgDiv {
+  width: 676rpx;
+  height: 426rpx;
+  background-color: white;
+  margin: auto;
+}
+
+.top_imgDiv image {
+  width: 648rpx;
+  height: 408rpx;
+  background-color: #009ad8;
+  margin-left: 14rpx;
+  margin-top: 5rpx;
+}
+
+/* 标题、价格、门店 */
+/* 复用标题 */
+.textBaseTitle{
+  line-height: 100rpx;
+  margin-left: 30rpx;
+  border-bottom: 1rpx dashed #9b9b9b;
+  display: block;
+  width:100%;
+  margin: auto;
+  text-align: center;
+  font-size: 36rpx; 
+  background-color: white;
+  margin-top: 20rpx;
+}
+
+
+.textBaseTitle::after {
+  content: "";
+  display: inline-block;
+  width: 50rpx;
+  height: 4rpx;
+  background-color: black;
+  position: relative;
+  top: -10rpx;
+  left: 30rpx;
+}
+
+.textBaseTitle::before {
+  content: "";
+  display: inline-block;
+  width: 50rpx;
+  height: 4rpx;
+  background-color: black;
+  position: relative;
+  top: -10rpx;
+  right: 30rpx;
+}
+.titleDiv {
+  width: 100%;
+  height: 200rpx;
+  background: white;
+}
+
+.titleDiv text {
+  margin-left: 30rpx;
+}
+
+.titleDiv .h1 {
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.titleDiv .price {
+  display: block;
+  font-size: 30rpx;
+  color: #f70000;
+  font-weight: bold;
+}
+
+.titleDiv .sales {
+  font-size: 26rpx;
+  margin-right: 60rpx;
+}
+
+.titleDiv .stores {
+  font-size: 26rpx;
+}
+
+/* 商品简介区域 */
+
+.shopIntro {
+  width: 100%;
+  height: 60rpx;
+  background-color: #f2f2f2;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  border-bottom: 2rpx solid #777;
+  border-top: 2rpx solid #777;
+  text-align: center;
+}
+
+/* 商品简介内容 */
+
+.IntroContainer {
+  width: 100%;
+  background-color: white;
+}
+
+.IntroContainer text {
+  font-size: 26rpx;
+  /* display: block; */
+  margin-left: 30rpx;
+  margin-bottom: 15rpx;
+  margin-top: 20rpx;
+  width: 250rpx;
+
+  
+
+}
+
+ .prve {
+  color: #9b9b9b;
+   margin-right: 8rpx; 
+  line-height: 60rpx !important;
+} 
+
+/* 商品评价区域 */
+
+.shopEval {
+  width: 100%;
+  height: 60rpx;
+  background-color: #f2f2f2;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #777;
+  border-top: 2rpx solid #777;
+  line-height: 60rpx;
+  text-align: center;
+  margin-bottom: 32rpx;
+}
+
+/* 商品评价内容 */
+
+.EvalContainer {
+  width: 100%;
+  background: white;
+}
+.anyEvalText{
+  width: 600rpx;
+  height: 50rpx;
+  /* background-color: red; */
+  font-size: 24rpx;
+  margin: auto;
+  
+}
+
+.anyEvalText text{
+  width: 150rpx;
+  height: 50rpx;
+  text-align: center;  
+  border-radius: 50rpx; 
+  margin-right: 20rpx;
+  margin-left: 20rpx; 
+  margin-bottom: 30rpx;
+  font-size:22rpx; 
+  float: left;
+  border: 1px solid ;
+  line-height: 50rpx;
+ 
+ 
+}
+
+
+
+.EvalImgDiv {
+  width: 80rpx;
+  height: 100%;
+  float: left;
+  clear: both;
+  
+}
+
+.EvalImgDiv image {
+  width: 80rpx;
+  height: 80rpx;
+  border: 2rpx solid #969696;
+  border-radius: 50rpx;
+}
+
+.EvalDiv {
+  width: 700rpx;
+  height: 260rpx;
+  margin: auto;
+  /* border: 2rpx solid #969696; */
+}
+
+.EvalDiv text {
+  display: block;
+  font-size: 22rpx;
+  margin-bottom: 15rpx;
+}
+
+.EvaltextDiv {
+  width: 600rpx;
+  height: 240rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}
+
+.Eval_imgsDiv>view {
+  border: 6rpx solid #ccc;
+  margin-right: 10rpx;
+  float: left;
+}
+
+.Eval_imgsDiv>view>image {
+  width: 110rpx;
+  height: 80rpx;
+  background-color: #009ad6;
+   margin:8rpx 3rpx 0 3rpx; 
+}
+
+.anyDiv {
+  width: 100%;
+  height: 300rpx;
+  margin-top:20rpx;
+}
+
+/* 页脚 */
+
+.footer {
+  width: 100%;
+  height: 120rpx;
+   background-color:white;  
+  margin-top: 30rpx;
+}
+
+.footer_mid{
+   width: 680rpx;
+  height: 90rpx;
+  /* background:black; */
+  margin: auto;
+  margin-top: 15rpx;
+
+}
+
+.footer_mid .car{
+   width: 76rpx;
+  height: 86rpx;
+  float: left;
+ 
+}
+.footer_mid .car text{
+  font-size: 24rpx;
+
+}
+
+.footer_mid .comi{
+  margin-left: 15rpx;
+}
+
+.footer_mid .car image{
+   width: 48rpx;
+  height: 48rpx;
+  background:  #009ad6;
+  display: block;
+  margin: auto;
+  
+}
+.footer_mid button{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  background-color:#4c4c4c;
+  color: white; 
+  line-height: 72rpx;
+}
+.footer_mid .addBtn{
+  width:240rpx ;
+  height: 72rpx;
+  font-size: 24rpx;
+  float: left;
+}
+
+.footer_mid .buy{
+   width:240rpx ;
+  height: 72rpx;
+  font-size: 24rpx;
+  float: left;
+}
